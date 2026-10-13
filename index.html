@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	*Modifed by Jackson Avery*
+
+	HOW TO EDIT: search for "EDIT:" to fill in placeholders, and "COPY BLOCK"
+	for items you can duplicate as you add projects, courses, or events later.
+
+	ADDING IMAGES (Research & Outreach): each project/institution has a commented-out
+	image line. To use it: put your image in that folder, fix the filename and alt
+	text, and remove the comment markers at the start and end of that line.
+	Image classes:
+	    image right = small image floated to the right of the text
+	    image left  = small image floated to the left of the text
+	    image fit   = full-width image above the text
+-->
+<html lang="en">
+	<head>
+		<title>Jackson Avery | Astronomy &amp; Astrophysics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Larger name & subtitle on the welcome page */
+			#intro h1 {
+				font-size: 3em;
+				line-height: 1.2;
+			}
+
+			#intro p {
+				font-size: 1.75em;
+				line-height: 1.5;
+			}
+
+			@media screen and (max-width: 736px) {
+				#intro h1 {
+					font-size: 2.75em;
+				}
+
+				#intro p {
+					font-size: 1.25em;
+				}
+			}
+
+			/* Larger social buttons in Contact*/
+			#six ul.icons li .icon {
+				font-size: 4em;
+			}
+
+			#six ul.icons li {
+				padding-right: 0.6em;
+			}
+
+			/* Header image credit in the footer */
+			#footer .credit {
+				font-size: 0.7em;
+				color: rgba(255, 255, 255, 0.35);
+				margin: 1.5em 0 0 0;
+				line-height: 1.6;
+			}
+
+			/* Images in Research & Outreach */
+			#two .image,
+			#four .image {
+				margin-bottom: 1.5em;
+			}
+
+			/* Start each project/institution below any floated image above it */
+			#two h3, #two h4 {
+				clear: both;
+			}
+
+			/* Make each section grow to fit a floated image at its end, so the
+			   image isn't cut off by the next section (e.g. the Fiske photo) */
+			#two > .inner::after,
+			#four > .inner::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			/* On phones, show floated images full width above the text */
+			@media screen and (max-width: 736px) {
+				#two .image.left, #two .image.right,
+				#four .image.left, #four .image.right {
+					float: none;
+					display: block;
+					max-width: 100%;
+					margin: 0 0 1.5em 0;
+					top: 0;
+				}
+
+				#two .image img,
+				#four .image img {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		
+		
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">About Me</a></li>
+							<li><a href="#two">Research</a></li>
+							<li><a href="#three">Teaching</a></li>
+							<li><a href="#four">Outreach</a></li>
+							<li><a href="#five">Curriculum Vitae</a></li>
+							<li><a href="#six">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro (background image)
+				     EDIT: put your image at images/index_header.jpeg (or change the path below).
+				     - Overlay darkness: change both 0.45 values (higher = darker, e.g. 0.6).
+				     - Cropping focus: change "center" in background-position (e.g. "right center" or "30% 50%").
+				     - Name/subtitle size: edit #intro h1 and #intro p in the style block in the head.
+				     - If using an ESA/Webb or ESA/Hubble image, add a credit line in the footer. -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up"
+						style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/index_header.jpeg');
+						       background-size: cover; background-position: center; background-repeat: no-repeat;">
+						<div class="inner">
+							<h1>Jackson Avery</h1>
+							<p>Astronomy and Astrophysics PhD Student<br>
+								University of California, Santa Cruz</p>
+							<ul class="actions">
+							</ul>
+						</div>
+					</section>
+
+				<!-- One: About Me (single spotlight) -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/JAvery_Profile.png" alt="Jackson Avery smiling in a selfie on a redwood forest trail, wearing black-and-white glasses and a black shirt with a bold white zigzag pattern." data-position="center 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>About Me</h2>
+										<p><strong>I'm a first-year PhD student in Astronomy &amp; Astrophysics at the&nbsp;University of California, Santa Cruz studying exoplanets &amp; brown dwarfs.</strong></p>
+										<p>I earned my B.A. in Astronomy <em>(Astrophysics &amp; Planetary Sciences)</em> from the University of Colorado Boulder in 2023, followed by an M.A. in Education <em>(Science Curriculum &amp; Instruction)</em> in 2024. Before returning for my PhD, I worked for several years as a high school science educator where I continued my research when I was outside the classroom.</p>
+										<p>Outside of research, you can usually find me playing modern board games with friends, solving my way out of escape rooms, or practicing American Sign Language. I'm drawn to puzzles of all kinds, which might explain why I ended up in astronomy.</p>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two: Research (single column) -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Research</h2>
+
+						  <h3>Interests</h3>
+						  <div class="features interests">
+								<section>
+									<h3>Exoplanets &amp; Brown Dwarfs</h3>
+								</section>
+								<section>
+									<h3>Ground-Based Observations</h3>
+								</section>
+								<section>
+									<h3>Atmospheric Modeling</h3>
+								</section>
+								<section>
+									<h3>STEM Education</h3>
+								</section>
+						  </div>
+
+							<h3>Current Projects</h3>
+							<!-- COPY BLOCK: one <h4> + optional image + <p> per project -->
+						  <h4>[Project Title]</h4>
+							<!-- <span class="image right"><img src="images/research/current-project.jpg" alt="[Describe the image]" /></span> -->
+							<!-- EDIT -->
+							<p>[1–2 sentence description]<br />
+							Advisors: Steph Sallum, Jonathan Fortney, UC Santa Cruz &middot; 2026 – Present</p>
+
+							<h4>Ground-Based Slitless Spectrophotometry</h4>
+							<!-- <span class="image right"><img src="images/research/slitless.jpg" alt="[Describe the image]" /></span> -->
+							<p>Testing a&nbsp;low-cost, slitless spectrophotometry system on a 20" ground-based telescope to observe transiting exoplanets  multiple wavelengths simultaneously. Planning and leading observations, building Python pipelines to process slitless spectrophotometric data, and modeling noise sources and instrument efficiency to determine the achievable precision of our system.<br />
+							Advisor: Zach Berta-Thompson, CU Boulder &amp; Sommers-Bausch Observatory &middot; 2025 – Present</p>
+
+							<hr />
+							<h3>Past Projects</h3>
+
+							<!-- COPY BLOCK: one <h4> + optional image + <p> per project -->
+							<h4>From Bias to Belonging: Supporting Science Identity in High School Science</h4>
+							<span class="image right"><img src="images/research/bias-to-belonging.png" alt="Diverging bar chart for the statement “When it comes to learning science, I think of myself as a science person.” Agreement rose from 24% before the course to 44% after, and disagreement fell from 35% to 15%. The net score moved from −12% to +29%." /></span>
+							<p>Designed and evaluated an inclusive physics curriculum highlighting marginalized scientists, pairing core wave concepts with the stories of overlooked figures in STEM. Evaluated its impact through mixed-methods analysis of student drawings, reflections, and identity surveys, documenting stronger science identity and sense of representation after implementation, especially among female students. <em>Master's Capstone project.</em><br />
+							Advisors: Will Lindsay, Ian Her Many Horses, Valerie Otero, CU Boulder &middot; 2024</p>
+
+						  <h4>Comparative Analysis of Introductory Astronomy Labs</h4>
+							<span class="image left"><img src="images/research/Blooms.png" alt="3D staircase model of the revised Bloom’s Taxonomy from Iowa State University. A 4-by-6 grid of blocks crosses four knowledge types with six cognitive processes, and each block holds an example learning objective." /></span>
+							<p>Compared lab assignments in CU Boulder’s introductory astronomy courses for science majors and non-majors by the types of knowledge and cognitive process&nbsp; each question required. Discovered that the majors’ lab more often asked students to judge evidence and develop their own ideas, the non-majors’ lab leaned on memorization, and neither asked students to reflect on how they learn. <em>This project was a component of an undergraduate research class.</em><br>
+Advisors: Noah Finkelstein, Seth Hornstein, CU Boulder &middot; 2023</p>
+							
+						  <h4>Photometric Transit of  Exoplanet HAT-P-53 b</h4>
+							<!-- <span class="image right"><img src="images/research/hat-p-53b.png" alt="[Describe the image, e.g. transit light curve of HAT-P-53 b]" /></span> -->
+							<p>Observed a transit of the hot Jupiter HAT-P-53 b and built a Python photometry pipeline that recovered its accepted transit depth and radius. <em>This project was a component of an undergraduate research class.</em><br>
+Advisor: Zach Berta-Thompson, CU Boulder &middot; 2022</p>
+
+							<hr />
+						  <h3>Publications</h3>
+							<!-- EDIT: update status/links as papers are published.
+							     COPY BLOCK: one <li> per paper -->
+							<ul>
+								<li><strong>Avery, J.</strong>, Berta-Thompson, Z. K., Stephens, A., &amp; Smith, R. <em>Design Considerations for Ground-Based Slitless Spectrophotometry.</em> <strong><em>In preparation</em></strong>.</li>
+								<li>Berta-Thompson, Z. K., Wachiraphan, P., Stephens, A., Caradonna, M., Murray, C., Arriero, V., <strong>Avery, J.</strong>, Duvvuri, G. M., &amp; Pineda, S. (2025). <em>exoatlas: friendly Python code for exoplanet populations.</em> <strong><em>Submitted</em></strong> <strong> to JOSS.</strong> <a href="https://arxiv.org/abs/2507.02210">arXiv:2507.02210</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three: Teaching (grouped by institution, most recent first)
+				     Format for each line:  <strong>Role:</strong> Course Name (CODE; Term Year)
+				     COPY BLOCK: add an <h3> + <ul> for a new institution (e.g., UC Santa Cruz,
+				     placed at the top), or an <li> for a new role at an existing one. -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Teaching Experience</h2>
+
+							<h3>Northglenn High School<em> (Northglenn, Colorado)</em></h3>
+						  <ul>
+							<li><strong>Secondary Science Teacher:</strong> General Physics &amp; Geology (Fall 2024 – Spring 2026)</li>
+							</ul>
+
+						  <h3>University of Colorado Boulder &amp; PEER Physics</h3>
+							<ul>
+								<li><strong>Co-Instructor:</strong> Energy and Interactions (PHYS/EDUC 1580; Summer 2024)</li>
+								<li><strong>Curriculum Developer:</strong> PEER Physics (Summer 2024)</li>
+							</ul>
+
+							<h3>Centaurus High School<em> (Lafayette, Colorado)</em></h3>
+							<ul>
+							  <li><strong>Student Teacher:</strong> General Physics &amp; AP/IB Physics I (Fall 2023 – Spring 2024)</li>
+							</ul>
+
+						  <h3>University of Colorado Boulder</h3>
+							<ul>
+								<li><strong>Teaching Assistant:</strong> Accelerated Introductory Astronomy 1 (ASTR 1030; Spring 2023, Fall 2023)</li>
+								<li><strong>Teaching Assistant:</strong> Formation &amp; Dynamics of Planetary Systems (ASTR 3710; Fall 2022)</li>
+								<li><strong>Teaching Assistant:</strong> Planets, Moons, and Rings (ASTR 3750; Fall 2022)</li>
+								<li><strong>Learning Assistant:</strong> Introductory Astronomy 1 (ASTR 1010; Spring 2022)</li>
+								<li><strong>Learning Assistant Mentor:</strong> Becoming a Learning Assistant (EDUC 4610; Fall 2021)</li>
+								<li><strong>Learning Assistant:</strong> Accelerated Introductory Astronomy 1 (ASTR 1030; Spring 2021)</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Four: Outreach (same format as Teaching: grouped by institution, most recent first)
+				     Format for each line:  <strong>Role:</strong> Program or Event (Term Year – Term Year)
+				     COPY BLOCK: add an <h3> + optional image + <ul> for a new institution, or an <li> for a new role. -->
+					<section id="four" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Outreach</h2>
+
+							<!-- Fiske photo sits at the top right of Outreach, beside all the entries -->
+							<span class="image right"><img src="images/outreach/Fiske_planetarium.jpeg" alt="Jackson Avery standing with arms crossed and smiling in front of a large inflatable navy-blue planetarium dome, under a Fiske Planetarium MiniDome banner from the University of Colorado Boulder." /></span>
+
+							<h3>University of California, Santa Cruz</h3>
+							<!-- <span class="image right"><img src="images/outreach/ucsc-telescope-team.jpg" alt="[Describe the image]" /></span> -->
+							<ul>
+							  <li><strong>Telescope Outreach :</strong> UCSC Telescope Outreach Team (Fall 2026 – Present)</li>
+							</ul>
+
+							<h3>University of Colorado Boulder</h3>
+						  <ul>
+								<li><strong>Outreach Presenter &amp; Planetarium Navigator:</strong> Fiske Planetarium (Fall 2022 – Spring 2023)</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Five: Curriculum Vitae -->
+					<section id="five" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Curriculum Vitae</h2>
+							<ul class="actions">
+								<!-- EDIT: path to your CV file -->
+								<li><a href="files/CV_JacksonAvery.pdf" class="button primary">Download CV</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Six: Contact (spotlight layout, same as About Me, with the photo on the RIGHT)
+				     The photo stretches to the full height of the section and crops to fit.
+				     To change which part of the photo stays in view, edit data-position
+				     (e.g. "center top", "30% 50%"). On tablets/phones the photo moves below. -->
+					<section id="six" class="wrapper style1 spotlights">
+						<section>
+							<div class="content">
+								<div class="inner">
+									<h2>Contact</h2>
+									<ul class="contact">
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:jwavery@ucsc.edu">jwavery@ucsc.edu</a>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://www.linkedin.com/in/jackson-avery" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://orcid.org/0009-0003-0287-0149" class="icon brands fa-orcid"><span class="label">ORCID</span></a></li>
+												<li><a href="https://github.com/JacksonAvery" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<h3>Address</h3>
+											<span>Department of Astronomy &amp; Astrophysics<br />
+											University of California, Santa Cruz<br />
+											Interdisciplinary Sciences Bldg<br />
+											550 Red Hill Rd, Santa Cruz, CA 95064</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- EDIT: alt text describing the photo -->
+							<span class="image"><img src="images/JAvery_NickelLick.jpeg" alt="[Jackson Avery at the 1-m Nickel Telescope, Lick Observatory]" data-position="center center" /></span>
+						</section>
+					</section>
+
+			</div>
+
+		<!-- Footer (keep the HTML5 UP credit: required by the CCA 3.0 license) -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Jackson Avery. All rights reserved.</li>
+						<li> Last Updated: Oct 2026</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+					<p class="credit">Header image: Artwork: <a href="http://www.nasa.gov/">NASA</a>, <a href="http://www.spacetelescope.org/">ESA</a>, and G. Bacon (<a href="http://www.stsci.edu/">STScI</a>); Science: <a href="http://www.nasa.gov/">NASA</a>, <a href="http://www.spacetelescope.org/">ESA</a>, L. Kreidberg and J. Bean (University of Chicago), and H. Knutson (California Institute of Technology)</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
