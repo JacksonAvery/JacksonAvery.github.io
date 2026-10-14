@@ -23,6 +23,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- LaTeX math (KaTeX). Write math in the page as $...$ (inline) or $$...$$ (own line).
+		     Chemical formulas: wrap in \mathrm{} so letters stay upright, e.g. $\mathrm{CH_4}$.
+		     To type a literal dollar sign in text, write \$ . -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
 		<style>
 			/* Larger name & subtitle on the welcome page */
 			#intro h1 {
@@ -233,15 +237,15 @@
 
 							<h3>Current Projects</h3>
 							<!-- COPY BLOCK: one <h4> + optional image + <p> per project -->
-						  <h4>[Project Title]</h4>
+						  <h4>Characterizing the L–T Transition in&nbsp;Brown Dwarfs &amp; Directly Imaged Exoplanets</h4>
 							<!-- <span class="image right"><img src="images/research/current-project.jpg" alt="[Describe the image]" /></span> -->
 							<!-- EDIT -->
-							<p>[1–2 sentence description]<br />
+							<p>I study the atmospheres of brown-dwarfs &amp; directly imaged  exoplanets as they cross the L–T transition, as their iron &amp; silicate clouds sink below the photosphere and methane absorption appears. In preparation for SCALES integral field spectrograph at Keck, I am targeting the 3–5 µm carbon features of $\mathrm{CH_4}$ and $\mathrm{CO}$ to measure how this transition plays out in low-gravity planets compared to brown dwarfs. I pair these observations with atmospheric models to combine clouds and vertical mixing, to learn how deep-atmosphere chemistry and dynamics shape our observations of these exciting worlds.<br />
 							Advisors: Steph Sallum, Jonathan Fortney, UC Santa Cruz &middot; 2026 – Present</p>
 
 							<h4>Ground-Based Slitless Spectrophotometry</h4>
 							<!-- <span class="image right"><img src="images/research/slitless.jpg" alt="[Describe the image]" /></span> -->
-							<p>Testing a&nbsp;low-cost, slitless spectrophotometry system on a 20" ground-based telescope to observe transiting exoplanets at multiple wavelengths simultaneously. Planning and leading observations, building Python pipelines to process slitless spectrophotometric data, and modeling noise sources and instrument efficiency to determine the achievable precision of our system.<br />
+							<p>I am testing a&nbsp;low-cost, slitless spectrophotometry system on a 20" ground-based telescope to observe transiting exoplanets at multiple wavelengths simultaneously. Planning and leading observations, building Python pipelines to process slitless spectrophotometric data, and modeling noise sources and instrument efficiency to determine the achievable precision of our system.<br />
 							Advisor: Zach Berta-Thompson, CU Boulder &amp; Sommers-Bausch Observatory &middot; 2025 – Present</p>
 
 							<hr />
@@ -405,6 +409,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- LaTeX math (KaTeX): finds $...$ and $$...$$ in the page and typesets it -->
+			<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+			<script>
+				renderMathInElement(document.getElementById('wrapper'), {
+					delimiters: [
+						{ left: '$$', right: '$$', display: true },
+						{ left: '$', right: '$', display: false },
+						{ left: '\\(', right: '\\)', display: false },
+						{ left: '\\[', right: '\\]', display: true }
+					],
+					throwOnError: false
+				});
+			</script>
 
 		<!-- Click-to-enlarge images (lightbox).
 		     Works on every image in the page (About Me, Research, Outreach, Contact).
