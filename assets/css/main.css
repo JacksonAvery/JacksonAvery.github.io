@@ -3910,8 +3910,9 @@ input, select, textarea {
 
 /* =========================================================
    Hot Jupiter palette (added by Jackson Avery). Overrides style above. Delete this block to revert.
-   1 Plum Space #1c1018 | 2 Wine Shadow #4d1a26 | 3 Ember #73291c
-   4 Rust Storm #a3461e | 5 Molten Copper #b85a24 | 6 Golden Starlight #ffdc9a
+   1 Plum Space #1c1018 | 2 Wine Shadow #4d1a26 | 3 Ember Red #8a1f0c
+   4 Burnt Orange #94380a | 5 Flame #c2410c | 6 Deep Ember #8a2c06
+   Accent: Golden Starlight #ffdc9a
    ========================================================= */
 
 /* Page background + sidebar */
@@ -3920,12 +3921,12 @@ body,
 	background: #1c1018;
 }
 
-/* Section backgrounds: darker at top & bottom, brightest at Outreach */
+/* Section backgrounds: wine → red ember → orange → flame at Outreach → back down */
 #one   { background-color: #4d1a26; }  /* About Me  - Wine Shadow   */
-#two   { background-color: #73291c; }  /* Research  - Ember         */
-#three { background-color: #a3461e; }  /* Teaching  - Rust Storm    */
-#four  { background-color: #b85a24; }  /* Outreach  - Molten Copper */
-#five  { background-color: #73291c; }  /* CV        - Ember         */
+#two   { background-color: #8a1f0c; }  /* Research  - Ember Red     */
+#three { background-color: #94380a; }  /* Teaching  - Burnt Orange  */
+#four  { background-color: #c2410c; }  /* Outreach  - Flame         */
+#five  { background-color: #8a2c06; }  /* CV        - Deep Ember    */
 #six   { background-color: #4d1a26; }  /* Contact   - Wine Shadow   */
 #footer { background-color: #1c1018; } /* Footer    - Plum Space    */
 
@@ -3934,8 +3935,9 @@ body,
 	background: #3a2230;
 }
 
+/* Desktop sidebar: ember red → burnt orange → flame → gold gradient (narrow screens stay solid gold below) */
 #sidebar nav a:after {
-	background-image: linear-gradient(to right, #b85a24, #ffdc9a);
+	background-image: linear-gradient(to right, #8a1f0c, #94380a, #c2410c, #ffdc9a);
 }
 
 @media screen and (max-width: 1280px) {
