@@ -1,6 +1,6 @@
 # Jackson Avery — Personal Website
 
-Home for my academic website: **https://jacksonavery.github.io**
+Home for my academic website: https://jacksonavery.github.io
 
 ## Credits
 - Design: [Hyperspace](https://html5up.net/hyperspace) by
